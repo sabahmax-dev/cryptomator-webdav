@@ -87,7 +87,7 @@ Add the following line under the Volumes entry within the docker-compose.yml fil
 
 ```yml
    # Volumes:
-      - /path/to/local/signed/cert.pem::/etc/stunnel/stunnel.pem:ro
+      - /path/to/local/signed/cert.pem:/etc/stunnel/stunnel.pem:ro
 ```
 
 This will force the internal stunnel TLS wrapper to use your own signed cert in place of it's own self-signed one.
